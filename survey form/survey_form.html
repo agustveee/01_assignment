@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h2>Survey Form</h2>
+    <form action="#" method="post">
+    
+        <!--User Information-->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!--Experience Rating-->
+        <p>How satisfied are you with our service?</p>
+        <label><input type="radio" name="satisfaction" value="Very Satisfied">Very Satisfied</label><br><br>
+        <label><input type="radio" name="satisfaction" value="Satisfied">Satisfied</label><br><br>
+        <label><input type="radio" name="satisfaction" value="Neutral">Neutral</label><br><br>
+        <label><input type="radio" name="satisfaction" value="Dissatisfied">Dissatisfied</label><br><br>
+        <label><input type="radio" name="satisfaction" value="Very Dissatisfied">Very Dissatisfied</label><br><br>
+
+        <!--Favorite Feature-->
+        <p>What features do you value most?</p>
+        <label><input type="checkbox" name="feature" value="Ease to Use">Ease to Use</label><br></br>
+        <label><input type="checkbox" name="feature" value="Design">Design</label><br></br>
+        <label><input type="checkbox" name="feature" value="Customer Support">Customer Support</label><br></br>
+
+
+        <!--User Role-->
+        <label for="role">What best describes you?</label>
+        <select id="role" name="role">
+            <option value="Student">Student</option>
+            <option value="Professional">Professional</option>
+            <option value="Hobbyist">Hobbyist</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <!--Additional Comments-->
+        <label for="comments">Additional comments or suggestions:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <!--Submit Button-->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
